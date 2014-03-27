@@ -1,4 +1,4 @@
-FROM akerl/arch
+FROM dock0/arch
 MAINTAINER akerl <me@lesaker.org>
 EXPOSE 80
 
