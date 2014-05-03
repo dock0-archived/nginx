@@ -1,4 +1,4 @@
-FROM dock0/arch:f4c0d1f00e86
+FROM dock0/arch
 MAINTAINER akerl <me@lesaker.org>
 EXPOSE 80
 
