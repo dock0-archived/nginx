@@ -1,4 +1,4 @@
-FROM dock0/arch
+FROM dock0/service
 MAINTAINER akerl <me@lesaker.org>
 EXPOSE 80
 RUN pacman -Syu --noconfirm nginx
