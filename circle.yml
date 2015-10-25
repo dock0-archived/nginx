@@ -7,6 +7,4 @@ dependencies:
 test:
   override:
     - docker run -ti test /bin/true
-    - docker run -ti test /bin/bash --version
-    - docker run -d -p 80:80 test && sleep 5
-    - curl localhost
+    - docker run -ti test nginx -t
