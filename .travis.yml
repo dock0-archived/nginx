@@ -1,0 +1,13 @@
+sudo: required
+dist: trusty
+services:
+- docker
+install:
+- docker build -t test .
+script:
+- docker run -ti test /bin/true
+- docker run -ti test nginx -t
+notifications:
+  email: false
+  slack:
+    secure: A8NU9tCGkaZt0TwsGwSk9kmZsBp8DREUhW9RcJQjNWedUTrVdYv3iOn/l0LAFrp5EYzcTSNoj9Kc9VmMYQ4EW7h+IxabVKbX8DLr9myec82pgdgIPTHWKfTEizWIylNL7BfUOl99f+Lt0GohF7urmo6kbFTQobbX2ZIqjFg5VeKBtN6i8WeT+9z6Tf56CJTjobRipmlxWdTt3XTyPb84eI7ZIZC+UHyqS4VILQjiWm4kttMTgfVaMpEqVTTATSrFmXsm4K3Qng+bXlUuLWezPIf8n+ygy53qd4+YqCJrfmbfP5jOkckOLFVCzjgeId3qCViexQ3Mdt3qRaBSr4zc6KAumpvr37BpySQV6LcAff/f5vZz/fY4KT+x9HK9vpdDq/C+5ln9TZoZIGg33P/0binZHLqSIvRSY/u49KYQTf505c5Pp34tOaTIHH4AxnAQUdgVR0CygItVMRquB/PHaKdMrbmdgEXYRX5Oa/7kEjMzO3M38TBtlH8bitM+Igo6ZCOZET8/zwb+nHRzDpnuc0KaUltdYT3916pdqTVFIJ3bpA6cHChfzXwvZuonPXJhoEKHzpJgV/IWqAThNoOr6wbgBbW3ot+cANuI95TWSVUwzsi3hsokV+lZGJ4bxA9Z6dgKfBiC8d7a9LBH8VwuyS8jlDWD2xxsMxGjlbi010w=
