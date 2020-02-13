@@ -1,3 +1,5 @@
+**Deprecation Notice:** I've switched from this repo to deploying static sites on S3 and Cloudfront.
+
 dock0/nginx
 =======
 
